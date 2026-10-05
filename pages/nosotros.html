@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>StreetWear | Nosotros</title>
+</head>
+
+<body class="pagina">
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <figure>
+                        <img class="img-logo" src="../img/logo.jpg" alt="Logo de StreetWear">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./producto.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./preguntas.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-contenedor">
+        <h1 class="titulo-principal titulo">Nuestra Historia</h1>
+        <section class="bloque-seccion">
+            <h2>Cómo arrancamos</h2>
+            <p>
+                Todo empezó en 2020, cuando con mi pareja decidimos animarnos a cumplir el sueño de tener nuestro propio
+                negocio. No teníamos experiencia, pero sí muchas ganas.
+            </p>
+            <p>Los primeros meses no fueron fáciles:
+                atendíamos
+                todo
+                nosotros. Pero cada cliente que entraba nos confirmaba que íbamos por buen camino.
+            </p>
+            <p>
+                Hoy, 6 años después, seguimos con la misma esencia del primer día: ofrecer ropa de calidad. Gracias a
+                quienes confiaron en nosotros desde el
+                comienzo, y a quienes se suman todos los días.
+                ¡Te esperamos!
+            </p>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>Desarrollado por Iñaki</p>
+        <p>&copy; <span id="year"></span> Todos los Derechos Reservados.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

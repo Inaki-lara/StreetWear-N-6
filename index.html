@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>StreetWear | Inicio</title>
+</head>
+
+<body class="pagina">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <figure>
+                        <img class="img-logo" src="./img/logo.jpg" alt="Logo de StreetWear">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/producto.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/preguntas.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="main-contenedor">
+        <h1 class="titulo-principal">Inicio <span class="titulo-nick">StreetWear</span></h1>
+        <section class="bloque-seccion bloque-seccion--galeria mb-4">
+            <h2 class="subtitulo-principal">La mejor ropa de <span class="titulo-nick">StreetWear</span></h2>
+            <div id="galeria" class="galeria carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/buzo-negro.jpg" alt="Buzo Básico Negro">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Buzo Basic Black</p>
+                                    <p class="precio-producto">$50.000</p>
+                                </div>
+                            </article>
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/buzo-azul-cang.jpg" alt="Buzo Azul Canguro">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Buzo Cang Ocean</p>
+                                    <p class="precio-producto">$50.000</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/remera-basica.jpg" alt="Remera básica">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Remera Basic</p>
+                                    <p class="precio-producto">$33.000</p>
+                                </div>
+                            </article>
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/remera-bordo.jpg" alt="Remera Bordo">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Remera Wine</p>
+                                    <p class="precio-producto">$33.000</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/jean-baggy-classic.jpg" alt="Jean Baggy Clásico">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Jean Baggy</p>
+                                    <p class="precio-producto">$75.000</p>
+                                </div>
+                            </article>
+                            <article class="col-6">
+                                <figure>
+                                    <img class="img-ropa" src="./img/jean-baggy-negro.jpg" alt="Jean Baggy Negro">
+                                </figure>
+                                <div class="producto-info">
+                                    <p class="nombre-producto">Jean Baggy Negro</p>
+                                    <p class="precio-producto">$75.000</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <button type="button" class="btn btn-warning mb-4 d-block mx-auto" data-bs-toggle="modal"
+            data-bs-target="#modalEnvios">
+            Ver info de envíos
+        </button>
+        <div class="modal fade" id="modalEnvios" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5">Envíos y cambios</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">Envíos a todo el país. Cambios dentro de los 30 días.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <h1>BORRAR DESPUES</h1>
+    <footer class="pie">
+        <p>Desarrollado por Iñaki</p>
+        <p>&copy; <span id="year"></span> Todos los Derechos Reservados.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
