@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@400;500;600&family=Tagesschrift&display=swap');
+
+:root {
+  --primario: #242021;
+  --primarioOscuro: #352D20;
+  --secundario: #776D5E;
+  --secundarioOscuro: #61584A;
+  --acento: #D98E3B;
+  --acentoOscuro: #B8721F;
+  --blanco: #FFFFFF;
+  --negro: #000000;
+
+  --fuentePrincipal: "Kavoon", cursive;
+  --fuenteSecundaria: "Tagesschrift", cursive;
+  --fuenteTexto: "Poppins", sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuenteTexto);
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.pagina {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "encabezado"
+    "principal"
+    "pie";
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primario);
+  border-bottom: 2px solid var(--acento);
+  grid-area: encabezado;
+}
+
+.img-logo {
+  width: auto;
+  height: 60px;
+}
+
+figure {
+  margin: 0;
+}
+
+.producto-info p {
+  margin: 0;
+}
+
+.nav-link {
+  font-family: var(--fuenteSecundaria);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--acento);
+}
+
+.navbar-nav .nav-link:focus {
+  outline: 2px solid var(--acento);
+}
+
+.navbar-nav .nav-link:active {
+  color: var(--acentoOscuro);
+}
+
+.nav-link,
+.btn,
+.producto-card,
+.pie a,
+.form-input {
+  transition: 0.3s;
+}
+
+.main-contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  grid-area: principal;
+}
+
+.bloque-seccion {
+  background-color: var(--primario);
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bloque-seccion--galeria {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.bloque-seccion--galeria .subtitulo-principal {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.titulo-principal {
+  font-family: var(--fuentePrincipal);
+  font-size: 2rem;
+  color: var(--blanco);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  font-family: var(--fuenteSecundaria);
+}
+
+.titulo-nick {
+  color: var(--acento);
+}
+
+.subtitulo-principal {
+  font-family: var(--fuenteSecundaria);
+  font-size: 2rem;
+  color: var(--blanco);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.galeria .carousel-control-prev-icon,
+.galeria .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.galeria .img-ropa {
+  object-fit: contain;
+  background-color: var(--blanco);
+}
+
+.producto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primarioOscuro);
+  border-bottom: 2px solid var(--acento);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.producto-card:hover {
+  background-color: var(--secundarioOscuro);
+}
+
+.producto-card:active {
+  background-color: var(--secundario);
+}
+
+.producto-card:focus-within {
+  outline: 2px solid var(--acento);
+}
+
+.img-ropa {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid var(--acento);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:focus {
+  outline: 2px solid var(--blanco);
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+.icono {
+  width: 100px;
+  height: 100px;
+}
+
+.producto-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.nombre-producto {
+  font-family: var(--fuenteSecundaria);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.precio-producto {
+  font-family: var(--fuenteSecundaria);
+  color: var(--acento);
+  font-weight: 500;
+}
+
+.galeria .producto-info {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 2px solid var(--acento);
+  border-radius: 10px;
+}
+
+.galeria .nombre-producto,
+.galeria .precio-producto {
+  font-size: 0.85rem;
+}
+
+.respuesta-faq {
+  margin-top: 0.75rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--blanco);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--acento);
+  border-radius: 4px;
+  font-family: var(--fuenteSecundaria);
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--acentoOscuro);
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  background-color: var(--primario);
+  border-top: 2px solid var(--acento);
+  text-align: center;
+  grid-area: pie;
+}
+
+.pie ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.pie a {
+  color: var(--blanco);
+}
+
+.pie a:hover {
+  color: var(--acento);
+}
+
+.pie a:focus {
+  outline: 2px solid var(--acento);
+}
+
+.pie a:active {
+  color: var(--acentoOscuro);
+}
+
+@media (min-width: 640px) {
+  .producto-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria .producto-info {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  .galeria .nombre-producto,
+  .galeria .precio-producto {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .producto-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .titulo-principal {
+    font-size: 2.5rem;
+  }
+}
+
+.accordion-item {
+  background-color: var(--primarioOscuro);
+  border-color: var(--acento);
+}
+
+.accordion-button {
+  background-color: var(--primarioOscuro);
+  color: var(--blanco);
+  font-family: var(--fuenteSecundaria);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secundarioOscuro);
+  color: var(--acento);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: var(--acento);
+  box-shadow: 0 0 0 0.25rem var(--acentoOscuro);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background-color: var(--primario);
+  color: var(--blanco);
+}
