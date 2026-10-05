@@ -341,33 +341,3 @@ figure {
   }
 }
 
-.accordion-item {
-  background-color: var(--primarioOscuro);
-  border-color: var(--acento);
-}
-
-.accordion-button {
-  background-color: var(--primarioOscuro);
-  color: var(--blanco);
-  font-family: var(--fuenteSecundaria);
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: var(--secundarioOscuro);
-  color: var(--acento);
-  box-shadow: none;
-}
-
-.accordion-button:focus {
-  border-color: var(--acento);
-  box-shadow: 0 0 0 0.25rem var(--acentoOscuro);
-}
-
-.accordion-button::after {
-  filter: invert(1);
-}
-
-.accordion-body {
-  background-color: var(--primario);
-  color: var(--blanco);
-}
